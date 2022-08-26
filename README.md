@@ -49,4 +49,5 @@ Programa para retirada e devolução de livros de uma biblioteca.
 - Busca de estudantes, de livros, de estoque 
 - Validações, persistência, interface gráfica 
 
- 
+# Modelagem UML
+![Modelagem UML](docs/Modelagem-UML-BiblioSystem.jpg)
