@@ -1,0 +1,29 @@
+package biblioteca;
+
+import java.util.ArrayList;
+
+public class Livro {
+    // titulo
+    // isbn
+    // autor
+
+    private final String titulo;
+    private final int isbn;
+    private final String autor;
+
+    public Livro (String titulo, int isbn, String autor) {
+        this.titulo = titulo;
+        this.isbn = isbn;
+        this.autor = autor;
+    }
+
+    public String toString() {
+        return this.titulo + " " + this.isbn + " " + this.autor;
+    }
+
+    protected void listarLivros(ArrayList<Livro> livros) {
+        for (int i = 0; i < livros.size() ; i++) {
+            System.out.println(livros.get(i));
+        }
+    }
+}

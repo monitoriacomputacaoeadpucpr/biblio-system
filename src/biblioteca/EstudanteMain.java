@@ -1,3 +1,6 @@
+package biblioteca;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class EstudanteMain {
@@ -14,8 +17,9 @@ public class EstudanteMain {
         Scanner leitor = new Scanner(System.in);
         int opcaoEscolhida;
         Estudante estudante = null;
+        ArrayList<Estudante> estudantes = new ArrayList<Estudante>();
 
-        System.out.println("Olá! Seja bem vinda(a) à BiblioSystem!");
+        System.out.println("Olá! Seja bem vindo(a) à BiblioSystem!");
 
         do {
             System.out.println("\nMenu:");
@@ -42,8 +46,9 @@ public class EstudanteMain {
                     String curso = leitor.next();
 
                     estudante = new Estudante(nome, matricula, curso);
+                    estudantes.add(estudante);
 
-                    System.out.println("Estudante cadastrado com sucesso!");
+                    System.out.println("br.edu.pucpr.bibliosystem.Estudante cadastrado com sucesso!");
                     break;
 
                 case 2:
@@ -51,8 +56,8 @@ public class EstudanteMain {
                     System.out.println("\nListagem de estudantes");
                     System.out.println("--------------------------");
 
-                    if (estudante != null) {
-                        System.out.println(estudante);
+                    if (estudantes.size() > 0) {
+                        estudante.listarEstudantes(estudantes);
                     } else {
                         System.out.println("Nenhum estudante cadastrado");
                     }

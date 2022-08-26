@@ -1,3 +1,7 @@
+package biblioteca;
+
+import java.util.ArrayList;
+
 public class Estudante {
     // nome
     // matricula
@@ -15,5 +19,11 @@ public class Estudante {
 
     public String toString() {
         return this.nome + " " + this.matricula + " " + this.curso;
+    }
+
+    protected void listarEstudantes(ArrayList<Estudante> estudantes) {
+        for (int i = 0; i < estudantes.size() ; i++) {
+            System.out.println(estudantes.get(i));
+        }
     }
 }
