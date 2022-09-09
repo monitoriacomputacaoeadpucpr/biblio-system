@@ -39,13 +39,16 @@ public class EstudanteMain {
                     System.out.print("Digite o nome do(a) estudante: ");
                     String nome = leitor.next();
 
+                    System.out.print("Digite o CPF do(a) estudante: ");
+                    String cpf = leitor.next();
+
                     System.out.print("Digite o número da matrícula: ");
                     int matricula = leitor.nextInt();
 
                     System.out.print("Digite o nome do curso: ");
                     String curso = leitor.next();
 
-                    estudante = new Estudante(nome, matricula, curso);
+                    estudante = new Estudante(nome, cpf, matricula, curso);
                     estudantes.add(estudante);
 
                     System.out.println("br.edu.pucpr.bibliosystem.Estudante cadastrado com sucesso!");

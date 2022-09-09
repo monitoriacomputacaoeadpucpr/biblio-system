@@ -29,11 +29,18 @@ Programa para retirada e devolução de livros de uma biblioteca.
 
 - Busca de estudantes, de livros, de estoque 
 
+- ### Alteração nos requisitos:
+  - Cadastro de professores
+  - Professores também poderão retirar livros
+
 
 # MVP: 
 
 - Cadastro de estudantes. 
-  - Criação e listagem dos estudantes. 
+  - Criação e listagem dos estudantes.
+
+- Cadastro de professores.
+  - Criação e listagem dos professores.  
   
 - Cadastro de livros. 
   - Criação e listagem dos livros. 
@@ -42,12 +49,17 @@ Programa para retirada e devolução de livros de uma biblioteca.
   - Entrada e listagem dos livros. 
   
 - Movimentação de livros. 
-  - Retirada de livros pelos estudantes. 
-  - Devolução de livros pelos estudantes. 
+  - Retirada de livros pelos estudantes ou professores. 
+  - Devolução de livros pelos estudantes ou professores. 
   
 - Validações, persistência, interface gráfica 
 - Busca de estudantes, de livros, de estoque 
 - Validações, persistência, interface gráfica 
 
 # Modelagem UML
+
+### Versão 1:
 ![Modelagem UML](docs/Modelagem-UML-BiblioSystem.jpg)
+
+### Versão 2:
+![Modelagem UML](docs/Modelagem-UML-BiblioSystem-v2.jpg)

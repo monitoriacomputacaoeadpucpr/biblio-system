@@ -2,12 +2,12 @@ package biblioteca;
 
 import java.util.ArrayList;
 
-public class Livro {
+public class Livro extends Material {
+
     // titulo
     // isbn
     // autor
 
-    private final String titulo;
     private final int isbn;
     private final String autor;
 

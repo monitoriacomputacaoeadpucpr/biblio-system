@@ -2,23 +2,25 @@ package biblioteca;
 
 import java.util.ArrayList;
 
-public class Estudante {
+public class Estudante extends Pessoa {
     // nome
+    // cpf
     // matricula
     // curso
+    // vinculo
 
-    private final String nome;
     private final int matricula;
     private final String curso;
+    private final static String vinculo = "aluno";
 
-    public Estudante (String nome, int matricula, String curso) {
-        this.nome = nome;
+    public Estudante (String nome, String cpf, int matricula, String curso) {
+        super(nome, cpf, vinculo);
         this.matricula = matricula;
         this.curso = curso;
     }
 
     public String toString() {
-        return this.nome + " " + this.matricula + " " + this.curso;
+        return this.nome + " " + this.cpf + " " + vinculo + " " + this.matricula + " " + this.curso;
     }
 
     protected void listarEstudantes(ArrayList<Estudante> estudantes) {
